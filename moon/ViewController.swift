@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+   var
+    
+    
+    
+    
     let button2 = UIButton()
     let button3 = UIButton()
     let button4 = UIButton()
@@ -51,7 +56,7 @@ class ViewController: UIViewController {
         button5.setBackgroundImage(UIImage(systemName: "dot.square"), for: .normal)
         button5.addTarget(self, action: #selector(method(item:)), for: .touchUpInside)
         view.addSubview(button5)
-        //"1" for up,"2" for left,"3" for down,"4" for right,"5" for "return"
+        //"1" for up,"2" for left,"3" for d/Users/yangyuzhang/Downloads/moon/moon/ViewController.swiftown,"4" for right,"5" for "return"
 //        let button6 = UIButton()
         button6.frame = CGRect(x: 230, y: 550, width: 75, height: 75)
         button6.setBackgroundImage(UIImage(systemName: "arrow.clockwise"), for: .normal)
@@ -77,7 +82,9 @@ class ViewController: UIViewController {
         
     }
     @objc func method(item: UIButton){
-        UIView.animate(withDuration: 0.05){
+        
+        
+        UIView.animate(withDuration: 0.5){
             switch item {
             case self.button1:
                 self.tmp.transform = self.tmp.transform.translatedBy(x: +0, y: -10)
